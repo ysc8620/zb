@@ -1,0 +1,1 @@
+﻿<div style="padding:5px 15px; height:180px;"><img src="../gg.png" width="100%"></div>
