@@ -31,7 +31,7 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<h1>长按下方图片点选保存图片</h1>
 </header>
 <div class="wrapper">
-	<img src="bjlm123.taobao.com.php?name=<?php echo$name;?>&namea=<?php echo $namea;?>" width="100%"/>
+	<img src="rs.php?name=<?php echo$name;?>&namea=<?php echo $namea;?>" width="100%"/>
 </div>
 <?php }else{ ?>
 <div class="wrapper">
