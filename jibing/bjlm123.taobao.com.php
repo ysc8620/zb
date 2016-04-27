@@ -1,9 +1,9 @@
 <?php
 header("content-type:image/jpeg");
 mb_internal_encoding("UTF-8");
-$name = $_GET['name']?$_GET['name']:"亿酷网络科技bjlm123.taobao.com";
-$jb = $_GET['jb']?$_GET['jb']:"亿酷网络科技bjlm123.taobao.com";
-$uname = $_GET['uname']?$_GET['uname']:"亿酷网络科技bjlm123.taobao.com";
+$name = $_GET['name']?$_GET['name']:"私货网络";
+$jb = $_GET['jb']?$_GET['jb']:"私货网络";
+$uname = $_GET['uname']?$_GET['uname']:"私货网络";
 $im = imagecreatetruecolor(853, 640);
 $bg = imagecreatefromjpeg('toutu.jpg');
 imagecopy($im,$bg,0,0,0,0,853,640);

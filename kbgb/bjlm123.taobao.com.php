@@ -1,7 +1,7 @@
 <?php
 header("content-type:image/jpeg");
 mb_internal_encoding("UTF-8");
-$name = $_GET['name']?$_GET['name']:"亿酷网络科技bjlm123.taobao.com";
+$name = $_GET['name']?$_GET['name']:"私货网络";
 $im = imagecreatetruecolor(640, 463);
 $bg = imagecreatefromjpeg('bjlm123.taobao.com.jpg');
 imagecopy($im,$bg,0,0,0,0,640,463);

@@ -1,10 +1,9 @@
-
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
-<title>装逼神器V5.0</title>
+<title>装逼神器大全</title>
 <link type="text/css" rel="stylesheet" href="frozen.css" />
 <style>
 .follow{font-size:20px;line-height:30px;color:#fff;text-align:center;padding-top:30%;z-index:2000;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.9);display:none;}
@@ -12,9 +11,6 @@
 .follow img{width:180px;margin-top:10px;}
 </style></head>
 <body ontouchstart="">
-<header class="ui-header ui-header-positive ui-border-b">
-	<h1>装逼神器V5.0-<?php include('mc.php');?></h1>
-</header>
 <section class="ui-container" style="padding-bottom:55px;">
 
 <ul class="ui-list ui-list-link ui-border-tb">
@@ -437,6 +433,7 @@ function hide(){
 	document.getElementById("follow").style.display = "none"; 
 }
 </script>
+<?php include('share.php');?>
 <div style="display:none;"><?php include('tongji.php');?></div>
 </body>
 </html>

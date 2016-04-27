@@ -1,8 +1,8 @@
 <?php
 header("content-type:image/jpeg");
 mb_internal_encoding("UTF-8");
-$nametaobao = $_GET['nametaobao']?$_GET['nametaobao']:"亿酷网络科技bjlm123.taobao.com";
-$namebjlm123 = $_GET['namebjlm123']?$_GET['namebjlm123']:"亿酷网络科技bjlm123.taobao.com";
+$nametaobao = $_GET['nametaobao']?$_GET['nametaobao']:"私货网络";
+$namebjlm123 = $_GET['namebjlm123']?$_GET['namebjlm123']:"私货网络";
 $checkResult = $_GET['checkResult']?$_GET['checkResult']:"2";
 $sex = $_GET['sex']?$_GET['sex']:"儿子";
 
