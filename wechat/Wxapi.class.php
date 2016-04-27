@@ -21,6 +21,7 @@ class Wxapi
     private static  function get_php_file($filename) {
         return trim(substr(file_get_contents($filename), 15));
     }
+
     private static function set_php_file($filename, $content) {
         $fp = fopen($filename, "w");
         fwrite($fp, "<?php exit();?>" . $content);
@@ -65,6 +66,7 @@ class Wxapi
             $accessToken = self::getAccessToken();
             $url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$accessToken";
             $res = json_decode(self::httpGet($url));
+            var_dump($res);
             $jsapi_ticket = $res->ticket;
             if ($jsapi_ticket) {
                 $data->expire_time = time() + 7000;
@@ -112,7 +114,7 @@ class Wxapi
 /////////////////////////////////////////////////////////////
     static public function getSignature($timestamp='1499992323' ) {
 
-        $jsapiTicket = self::getJsApiTicketa();
+        $jsapiTicket = self::getJsApiTicket();
 
         // 注意 URL 一定要动态获取，不能 hardcode.
         //$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
@@ -134,34 +136,7 @@ class Wxapi
 
         return $signature;
     }
-    static  public function getJsApiTicketa() {
-        // jsapi_ticket 应该全局存储与更新，以下代码以写入到文件中做示例
 
-        if(empty($_SESSION['jsapi_ticket']) ||  (time()-intval($_SESSION['jsapi_ticket_time'])>7000) ){
-
-            $accessToken = self::getAccessToken();
-
-            $url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$accessToken";
-
-            $res = json_decode(self::httpGet($url));
-
-            $jsapi_ticket = $res->ticket;
-
-            if ($jsapi_ticket) {
-
-                //setcookie("jsapi_ticket",$jsapi_ticket,time()+7000,'/');
-                $_SESSION['jsapi_ticket']=$jsapi_ticket;
-                $_SESSION['jsapi_ticket_time']=time();
-            }
-
-            return $jsapi_ticket;
-
-        }else{
-
-            return $_SESSION['jsapi_ticket'];
-        }
-
-    }
 
     ////////////////////////////////
 
