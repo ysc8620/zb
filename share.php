@@ -1,11 +1,11 @@
 <?php
 require_once "./wechat/Wxapi.class.php";
 $signPackage = Wxapi::getSignPackage();
-$share_title = $share_title?$share_title:'装逼神器大全';
-$share_desc = $share_desc?$share_desc:'总有一款适合您,由怀仁早晚报提供';
-$share_link = $share_link?$share_link:'http://t.kakaapp.com/';
-$share_imgUrl = $share_imgUrl?$share_imgUrl:'http://t.kakaapp.com/zb.jpg';
-$share_title_friend = $share_title_friend?$share_title_friend:'';
+$g_share_title = isset($share_title)?$share_title:'装逼神器大全';
+$g_share_desc = isset($share_desc)?$share_desc:'总有一款适合您,由怀仁早晚报提供';
+$g_share_link = isset($share_link)?$share_link:'http://t.kakaapp.com/';
+$g_share_imgUrl = isset($share_imgUrl)?$share_imgUrl:'http://t.kakaapp.com/zb.jpg';
+$g_share_title_friend = isset($share_title_friend)?$share_title_friend:'';
 ?>
 <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 <script>
@@ -50,10 +50,10 @@ $share_title_friend = $share_title_friend?$share_title_friend:'';
         });
 
         var shareData = {
-            title: '<?php echo $share_title;?>',
-            desc: '<?php $share_desc;?>',
-            link: '<?php $share_link;?>',
-            imgUrl: '<?php $share_imgUrl;?>',
+            title: '<?php echo $g_share_title;?>',
+            desc: '<?php $g_share_desc;?>',
+            link: '<?php $g_share_link;?>',
+            imgUrl: '<?php $g_share_imgUrl;?>',
 
             trigger: function (res) {
                 //alert('用户点击发送给朋友');
@@ -70,10 +70,10 @@ $share_title_friend = $share_title_friend?$share_title_friend:'';
         };
 
         var shareDataFriend = {
-            title: '<?php echo $share_title_friend?$share_title_friend:$share_title;?>',
-            desc: '<?php echo $share_desc;?>',
-            link: '<?php echo $share_link;?>',
-            imgUrl: '<?php echo $share_imgUrl;?>',
+            title: '<?php echo $g_share_title_friend?$g_share_title_friend:$g_share_title;?>',
+            desc: '<?php echo $g_share_desc;?>',
+            link: '<?php echo $g_share_link;?>',
+            imgUrl: '<?php echo $g_share_imgUrl;?>',
 
             trigger: function (res) {
                 //alert('用户点击发送给朋友');
