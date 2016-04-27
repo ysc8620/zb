@@ -2,7 +2,7 @@
 error_reporting(0);
 $share_title = '喝酒认怂书生成器';
 $share_title = '喝酒认怂书生成器,由仁怀早晚报提供';
-$share_link = 'http://t.kakaapp.com/hjrss/';
+$share_link = 'http://t.kakaapp.com/hjrss/?name='.$_GET['name'].'&namea='.$_GET['namea'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
