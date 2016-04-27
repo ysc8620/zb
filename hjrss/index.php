@@ -64,6 +64,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 </div>
 <div style="display:none;"><?php include('../tongji.php');?></div>
 <?php } ?>
-<?php include('./share.php');?>
+<?php include('../share.php');?>
 </body>
 </html>
