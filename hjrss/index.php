@@ -53,7 +53,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
     	</form>
 	</div>
 
-
 </div>
 <style>
 .follow{font-size:20px;line-height:30px;color:#fff;text-align:center;padding-top:30%;z-index:2000;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.9);display:none;}
@@ -61,12 +60,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 .follow img{width:180px;margin-top:10px;}
 </style>
 
-<div id="follow" class="follow">
-	<span class="close" onClick="hide()">×</span>
-	<p>长按下方二维码图片</p>
-	<p>点选识别图中二维码</p>
-	<?php include('../ewm.php');?>
-</div>
 <div style="display:none;"><?php include('../tongji.php');?></div>
 <?php } ?>
 <?php include('../share.php');?>

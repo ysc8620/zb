@@ -414,11 +414,12 @@
     </li> */?>
 </ul>
 </section>
+<?php /*
 <footer class="ui-footer ui-footer-btn">
 	<ul class="ui-tiled ui-border-t">
 		<li class="ui-border-r"><a onClick="show()"><div>关注<?php include('mc.php');?></div></a></li>
 	</ul>
-</footer>
+</footer>       */?>
 <div id="follow" class="follow">
 	<span class="close" onClick="hide()">×</span>
 	<p>长按下方二维码图片</p>
