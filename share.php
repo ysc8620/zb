@@ -1,5 +1,5 @@
 <?php
-require_once "./wechat/Wxapi.class.php";
+require_once dirname(__FILE__) ."/wechat/Wxapi.class.php";
 $signPackage = Wxapi::getSignPackage();
 $g_share_title = isset($share_title)?$share_title:'装逼神器大全';
 $g_share_desc = isset($share_desc)?$share_desc:'总有一款适合您,由怀仁早晚报提供';
