@@ -1,5 +1,8 @@
 ﻿<?php
-error_reporting(0); 
+error_reporting(0);
+$share_title = '喝酒认怂书生成器';
+$share_title = '喝酒认怂书生成器,由仁怀早晚报提供';
+$share_link = 'http://t.kakaapp.com/hjrss/';
 ?>
 <!DOCTYPE html>
 <html lang="en">
