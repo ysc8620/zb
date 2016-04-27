@@ -51,9 +51,9 @@ $g_share_title_friend = isset($share_title_friend)?$share_title_friend:'';
 
         var shareData = {
             title: '<?php echo $g_share_title;?>',
-            desc: '<?php $g_share_desc;?>',
-            link: '<?php $g_share_link;?>',
-            imgUrl: '<?php $g_share_imgUrl;?>',
+            desc: '<?php echo $g_share_desc;?>',
+            link: '<?php echo $g_share_link;?>',
+            imgUrl: '<?php echo $g_share_imgUrl;?>',
 
             trigger: function (res) {
                 //alert('用户点击发送给朋友');
