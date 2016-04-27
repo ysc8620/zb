@@ -1,8 +1,10 @@
 ﻿<?php
 error_reporting(0);
 $share_title = '喝酒认怂书生成器';
-$share_title = '喝酒认怂书生成器,由仁怀早晚报提供';
-$share_link = 'http://t.kakaapp.com/hjrss/?name='.$_GET['name'].'&namea='.$_GET['namea'];
+$name = htmlspecialchars(trim($_GET['name']));
+$namea = htmlspecialchars(trim($_GET['namea']));
+$share_title = ($name && $namea)?"“{$name}”因喝酒喝不过向“{$namea}”认怂":'喝酒认怂书生成器,由仁怀早晚报提供';
+$share_link = 'http://t.kakaapp.com/hjrss/?name='.$name.'&namea='.$namea;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +31,7 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<h1>长按下方图片点选保存图片</h1>
 </header>
 <div class="wrapper">
-	<img src="bjlm123.taobao.com.php?name=<?=$_GET['name']?>&namea=<?=$_GET['namea']?>" width="100%"/>
+	<img src="bjlm123.taobao.com.php?name=<?php echo$name;?>&namea=<?php echo $namea;?>" width="100%"/>
 </div>
 <?php }else{ ?>
 <div class="wrapper">
