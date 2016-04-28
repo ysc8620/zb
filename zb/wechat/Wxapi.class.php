@@ -66,7 +66,6 @@ class Wxapi
             $accessToken = self::getAccessToken();
             $url = "https://api.weixin.qq.com/cgi-bin/ticket/getticket?type=jsapi&access_token=$accessToken";
             $res = json_decode(self::httpGet($url));
-            var_dump($res);
             $jsapi_ticket = $res->ticket;
             if ($jsapi_ticket) {
                 $data->expire_time = time() + 7000;
