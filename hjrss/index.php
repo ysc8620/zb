@@ -3,8 +3,8 @@ error_reporting(0);
 $share_title = '喝酒认怂书生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $namea = htmlspecialchars(trim($_GET['namea']));
-$share_title = ($name && $namea)?"“{$name}”因喝酒喝不过向“{$namea}”认怂":'喝酒认怂书生成器,由仁怀早晚报提供';
-$share_link = 'http://t.kakaapp.com/hjrss/?name='.$name.'&namea='.$namea;
+$share_title = ($name && $namea)?"【{$name}】因喝酒喝不过向【{$namea}】认怂":'喝酒认怂书生成器,由仁怀早晚报提供';
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/hjrss/?name='.$name.'&namea='.$namea;
 ?>
 <!DOCTYPE html>
 <html lang="en">
