@@ -5,7 +5,7 @@ $share_title = '爱情保证书生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $namea = htmlspecialchars(trim($_GET['namea']));
 $share_title = ($name && $namea)?"【{$name}】向{$namea}写的爱情保证书":"爱情保证书生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bzs/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bzs/?name='.$name.'&namea='.$_GET['namea'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,8 +35,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<img src="bzs.php?name=<?=$_GET['name']?>&namea=<?=$_GET['namea']?>" width="100%"/>
 </div>
 <?php }else{ ?>
-<header class="ui-header ui-header-positive ui-border-b">
-<h1>爱情保证书生成器</h1></header>
 <div class="wrapper">
 	<img src="icon.jpg" width="50%" style="margin:30px 25% 30px 25%;"/>
 	<div class="ui-form">

@@ -1,5 +1,10 @@
 ﻿<?php
-error_reporting(0); 
+error_reporting(0);
+$from_title = include('../mc.php');
+$share_title = '跆拳道黑带证书生成器';
+$name = htmlspecialchars(trim($_GET['name']));
+$share_title = ($name)?"【{$name}】的>跆拳道黑带证书":"跆拳道黑带证书生成器,由{$from_title}提供";
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/tqd/?name='.$name.'&id='.$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,7 +31,7 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<h1>长按下方图片点选保存图片</h1>
 </header>
 <div class="wrapper">
-	<img src="www.at168.com.php?name=<?=$_GET['name']?>" width="100%"/>
+	<img src="tqd.php?name=<?=$_GET['name']?>" width="100%"/>
 </div>
 <?php  include("../ad.php");?>
 <?php }else{ ?>

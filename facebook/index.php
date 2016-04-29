@@ -4,7 +4,7 @@ $from_title = include('../mc.php');
 $share_title = 'facebook入职生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $share_title = ($name)?"【{$name}】facebook入职":"跟我一起入职facebook生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/facebook/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/facebook/?name='.$name.'&namea='.$_GET['namea'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,8 +34,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<img src="facebook.php?name=<?=$_GET['name']?>&namea=<?=$_GET['namea']?>" width="100%"/>
 </div>
 <?php }else{ ?>
-<header class="ui-header ui-header-positive ui-border-b">
-<h1>跟我一起入职facebook生成器</h1></header>
 <div class="wrapper">
 	<img src="icon.jpg" width="50%" style="margin:30px 25% 30px 25%;"/>
 	<div class="ui-form">

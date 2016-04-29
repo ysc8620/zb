@@ -34,9 +34,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<img src="ck.php?name=<?=$_GET['name']?>&id=<?=$_GET['id']?>元" width="100%"/>
 </div>
 <?php }else{ ?>
-<header class="ui-header ui-header-positive ui-border-b">
-	<h1>催款通知单生成器</h1>
-</header>
 <div class="wrapper">
 	<img src="icon.jpg" width="50%" style="margin:10px 25% 10px 25%;"/>
 	<div class="ui-form">

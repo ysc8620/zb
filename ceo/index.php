@@ -34,9 +34,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<img src="rms.php?name=<?=$_GET['name']?>" width="100%"/>
 </div>
 <?php }else{ ?>
-
-<header class="ui-header ui-header-positive ui-border-b">
-<h1>阿里巴巴CEO任命书生成器</h1></header>
 <div class="wrapper">
 	<img src="icon.jpg" width="50%" style="margin:30px 25% 30px 25%;"/>
 	<div class="ui-form">
@@ -45,9 +42,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
             	<label for="#">姓名</label>
             	<input type="text" name="name" placeholder="请输入姓名"/>
         	</div>
-		
-
-		
 			<div class="ui-btn-wrap">
     			<button class="ui-btn-lg ui-btn-danger">确定</button>
 			</div>

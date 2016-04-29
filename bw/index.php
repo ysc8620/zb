@@ -34,9 +34,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<img src="bw.php?name=<?=$_GET['name']?>&id=<?=$_GET['id']?>" width="100%"/>
 </div>
 <?php }else{ ?>
-<header class="ui-header ui-header-positive ui-border-b">
-	<h1>病危通知书生成器</h1>
-</header>
 <div class="wrapper">
 	<img src="icon.jpg" width="50%" style="margin:40px 25% 40px 25%;"/>
 	<div class="ui-form">
@@ -46,23 +43,18 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
             	<label>姓名</label>
             	<input type="text" name="name" placeholder="输入姓名">
         	</div>
-		
-        	
 			<div class="ui-btn-wrap">
     			<button class="ui-btn-lg ui-btn-primary">确定</button>
 			</div>
     	</form>
 	</div>
-
 </div>
 <style>
 .follow{font-size:20px;line-height:30px;color:#fff;text-align:center;padding-top:30%;z-index:2000;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.9);display:none;}
 .follow span{font-size:40px;position:absolute;top:10px;left:10px;}
 .follow img{width:180px;margin-top:10px;}
 </style>
-
 <div style="display:none;"><?php include('../tongji.php');?></div>
-
 <?php } ?>
 <?php include('../share.php');?>
 </body>

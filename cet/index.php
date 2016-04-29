@@ -4,7 +4,7 @@ $from_title = include('../mc.php');
 $share_title = '英语四六级成绩单生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $share_title = ($name)?"【{$name}】英语成绩单":"英语四六级成绩单生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bw/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bw/?name='.$name.'&id='.$_GET['id'].'&school='.$_GET['school'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,9 +34,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<img src="toutu.php?level=<?=$_GET['level']?>&name=<?=$_GET['name']?>&school=<?=$_GET['school']?>&id=<?=$_GET['id']?>" width="100%"/>
 </div>
 <?php }else{ ?>
-<header class="ui-header ui-header-positive ui-border-b">
-	<h1>英语四六级成绩单生成器</h1>
-</header>
 <div class="wrapper">
 	<img src="icon.jpg" width="50%" style="margin:30px 25% 30px 25%;"/>
 	<div class="ui-form">
