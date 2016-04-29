@@ -4,7 +4,7 @@ $from_title = include('../mc.php');
 $share_title = '疾病诊断书生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $share_title = ($name)?"【{$name}】的疾病诊断书":"疾病诊断书生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/jibing/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/jibing/?name='.$name.'&uname='.$_GET['uname'].'&jb='.$_GET['jb'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

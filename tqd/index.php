@@ -33,14 +33,7 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 <div class="wrapper">
 	<img src="tqd.php?name=<?=$_GET['name']?>" width="100%"/>
 </div>
-<?php  include("../ad.php");?>
 <?php }else{ ?>
-<?
-if($_SERVER['HTTP_HOST']=='baidu.com'){
-	$tiao = 'http://bjlm123.taobao.com';
-	header("location: $tiao");
-}
-?>
 <header class="ui-header ui-header-positive ui-border-b">
 	<h1>跆拳道黑带证书生成器</h1>
 </header>
@@ -53,43 +46,19 @@ if($_SERVER['HTTP_HOST']=='baidu.com'){
             	<label>姓名</label>
             	<input type="text" name="name" placeholder="输入姓名">
         	</div>
-		
-        	
 			<div class="ui-btn-wrap">
     			<button class="ui-btn-lg ui-btn-primary">确定</button>
 			</div>
     	</form>
 	</div>
-	
-	<?php  include("../ad.php");?>
 </div>
 <style>
 .follow{font-size:20px;line-height:30px;color:#fff;text-align:center;padding-top:30%;z-index:2000;position:fixed;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.9);display:none;}
 .follow span{font-size:40px;position:absolute;top:10px;left:10px;}
 .follow img{width:180px;margin-top:10px;}
 </style>
-<footer class="ui-footer ui-footer-btn">
-	<ul class="ui-tiled ui-border-t">
-		<li class="ui-border-r"><a href="../"><div>更多装逼功能</div></a></li>
-		<li class="ui-border-r"><a onClick="show()"><div>关注<?php include('../mc.php');?></div></a></li>
-	</ul>
-</footer>
-<div id="follow" class="follow">
-	<span class="close" onClick="hide()">×</span>
-	<p>长按下方二维码图片</p>
-	<p>点选识别图中二维码</p>
-	<?php include('../ewm.php');?>
-</div>
-<script type="text/javascript">
-function show(){
-	document.getElementById("follow").style.display = "block"; 
-}
-function hide(){
-	document.getElementById("follow").style.display = "none"; 
-}
-</script>
 <div style="display:none;"><?php include('../tongji.php');?></div>
-
 <?php } ?>
+<?php include('../share.php');?>
 </body>
 </html>

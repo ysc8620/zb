@@ -3,15 +3,15 @@ error_reporting(0);
 $share_title = '喝酒认怂书生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $namea = htmlspecialchars(trim($_GET['namea']));
-$share_title = ($name && $namea)?"“{$name}”因喝酒喝不过向“{$namea}”认怂":'喝酒认怂书生成器,由仁怀早晚报提供';
-$share_link = 'http://t.kakaapp.com/hjrss/?name='.$name.'&namea='.$namea;
+$share_title = ($name && $namea)?"【{$name}】因喝酒喝不过向【{$namea}】认怂":'喝酒认怂书生成器,由仁怀早晚报提供';
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/hjrss/?name='.$name.'&namea='.$namea;
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
-<title>喝酒认怂书生成器-由仁怀早晚报提供</title>
+<title>喝酒认怂书生成器-<?php echo $share_title;?></title>
 <link type="text/css" rel="stylesheet" href="frozen.css" />
 <style>
 body{color:#a6a6a6; font-size:16px; padding-top:45px;}
@@ -42,7 +42,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
             	<label for="#">本人</label>
             	<input type="text" name="name" placeholder="输入本人姓名"/>
         	</div>
-		
 <div class="ui-form-item ui-border-b">
             	<label for="#">认怂对象</label>
             	<input type="text" name="namea" placeholder="输入认怂对象姓名"/>

@@ -4,7 +4,7 @@ $from_title = include('../mc.php');
 $share_title = '英语四六级成绩单生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $share_title = ($name)?"【{$name}】英语成绩单":"英语四六级成绩单生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bw/?name='.$name.'&id='.$_GET['id'].'&school='.$_GET['school'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/cet/?name='.$name.'&id='.$_GET['id'].'&school='.$_GET['school'].'&level='.$_GET['level'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

@@ -3,7 +3,7 @@ error_reporting(0);
 $from_title = include('../mc.php');
 $share_title = '美女诱惑图片生成器';
 $name = htmlspecialchars(trim($_GET['name']));
-$share_title = ($name)?"【{$name}】的美女诱惑图片":"美女诱惑图片生成器,由{$from_title}提供";
+$share_title = ($name)?"【{$name}】的美女诱惑":"美女诱惑图片生成器,由{$from_title}提供";
 $share_link = "http://{$_SERVER[HTTP_HOST]}".'/mn/?name='.$name.'&id='.$_GET['id'];
 ?>
 <!DOCTYPE html>

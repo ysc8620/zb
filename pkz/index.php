@@ -41,8 +41,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
             	<label for="#">姓名</label>
             	<input type="text" name="name" placeholder="输入姓名，如昱丞"/>
         	</div>
-		
-
 			<div class="ui-btn-wrap">
     			<button class="ui-btn-lg ui-btn-danger">确定</button>
 			</div>

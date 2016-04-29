@@ -3,7 +3,7 @@ error_reporting(0);
 $from_title = include('../mc.php');
 $share_title = '表白图片生成器';
 $name = htmlspecialchars(trim($_GET['name']));
-$share_title = ($name)?"【{$name}】我要向你表白":"表白图片生成器,由{$from_title}提供";
+$share_title = ($name)?"【{$name}】向你表白":"表白图片生成器,由{$from_title}提供";
 $share_link = "http://{$_SERVER[HTTP_HOST]}".'/bb/?name='.$name.'&id='.$_GET['id'];
 ?>
 <!DOCTYPE html>
@@ -63,9 +63,7 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 .follow span{font-size:40px;position:absolute;top:10px;left:10px;}
 .follow img{width:180px;margin-top:10px;}
 </style>
-
 <div style="display:none;"><?php include('../tongji.php');?></div>
-
 <?php } ?>
 <?php include('../share.php');?>
 </body>

@@ -4,7 +4,7 @@ $from_title = include('../mc.php');
 $share_title = '友谊小船说翻就翻了生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $share_title = ($name)?"【{$name}】的友谊小船说翻就翻了":"友谊小船说翻就翻了生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/yyxc/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/yyxc/?name='.$name.'&namea='.$_GET['namea'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

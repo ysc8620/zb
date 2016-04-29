@@ -3,7 +3,7 @@ error_reporting(0);
 $from_title = include('../mc.php');
 $share_title = '科比告别图片生成器';
 $name = htmlspecialchars(trim($_GET['name']));
-$share_title = ($name)?"【{$name}】的科比告别图片":"科比告别图片生成器,由{$from_title}提供";
+$share_title = ($name)?"【{$name}】的科比告别":"科比告别图片生成器,由{$from_title}提供";
 $share_link = "http://{$_SERVER[HTTP_HOST]}".'/kbgb/?name='.$name.'&id='.$_GET['id'];
 ?>
 <!DOCTYPE html>

@@ -38,7 +38,6 @@ h2.title {line-height: 45px;font-size: 20px;color: #FF0000;position: fixed;top: 
 	<img src="icon.jpg" width="50%" style="margin:40px 25% 40px 25%;"/>
 	<div class="ui-form">
     	<form action="">
-        	
         	<div class="ui-form-item ui-border-b">
             	<label>姓名</label>
             	<input type="text" name="name" placeholder="输入姓名">

@@ -18,16 +18,16 @@
 <li style="line-height:30px;"><a href="https://item.taobao.com/item.htm?id=528578907404" style="font-size:24px">购买本程序</a></li>
 -->
 
-<!-- 4-18更新两个生成器从这里开始   亿酷网络科技制作 bjlm123.taobao.com-->
+	*/ ?>           <!-- 4-18更新两个生成器从这里开始   亿酷网络科技制作 bjlm123.taobao.com-->
 <li class="ui-border-t" onClick="javascript:window.location.href='yyxc/'">
-        <div class="ui-list-img">
-            <span class="ui-tag-new" style="background-image:url(yyxc/icon.jpg)"></span>
-        </div>
-        <div class="ui-list-info">
-            <h4 class="ui-nowrap">友谊小船说翻就翻了生成器</h4>
-            <p class="ui-nowrap">友谊小船说翻就翻了</p>
-        </div>
-    </li>	*/ ?>
+    <div class="ui-list-img">
+        <span class="ui-tag-new" style="background-image:url(yyxc/icon.jpg)"></span>
+    </div>
+    <div class="ui-list-info">
+        <h4 class="ui-nowrap">友谊小船说翻就翻了生成器</h4>
+        <p class="ui-nowrap">友谊小船说翻就翻了</p>
+    </div>
+</li>
 <li class="ui-border-t" onClick="javascript:window.location.href='hjrss/'">
         <div class="ui-list-img">
             <span class="ui-tag-new" style="background-image:url(hjrss/icon.jpg)"></span>
@@ -37,7 +37,7 @@
             <p class="ui-nowrap">喝酒认怂书</p>
         </div>
     </li>	
-	<?php /*
+
 	<li class="ui-border-t" onClick="javascript:window.location.href='wxqb/'">
         <div class="ui-list-img">
             <span class="ui-tag-new" style="background-image:url(wxqb/icon.jpg)"></span>
@@ -411,7 +411,7 @@
             <h4 class="ui-nowrap">移民申请生成器</h4>
             <p class="ui-nowrap">世界难么大我想去看看</p>
         </div>
-    </li> */?>
+    </li>
 </ul>
 </section>
 <?php /*

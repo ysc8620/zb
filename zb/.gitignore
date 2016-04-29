@@ -2,4 +2,7 @@
 *.txt
 *.log
 *.json
+*.sketch
+*.db
+*.DS_Store
 /Runtime
