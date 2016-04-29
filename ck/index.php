@@ -4,7 +4,7 @@ $from_title = include('../mc.php');
 $share_title = '催款通知单生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $share_title = ($name)?"【{$name}】催款通知单":"催款通知单生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bw/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/ck/?name='.$name.'&id='.$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

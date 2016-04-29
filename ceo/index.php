@@ -4,7 +4,7 @@ $from_title = include('../mc.php');
 $share_title = '阿里巴巴CEO任命书生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $share_title = ($name)?"【{$name}】阿里巴巴CEO任命书":"阿里巴巴CEO任命书生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bw/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/ceo/?name='.$name.'&id='.$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

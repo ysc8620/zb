@@ -5,7 +5,7 @@ $share_title = '爱情保证书生成器';
 $name = htmlspecialchars(trim($_GET['name']));
 $namea = htmlspecialchars(trim($_GET['namea']));
 $share_title = ($name && $namea)?"【{$name}】向{$namea}写的爱情保证书":"爱情保证书生成器,由{$from_title}提供";
-$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bw/?name='.$name.'&id='.$_GET['id'];
+$share_link = "http://{$_SERVER[HTTP_HOST]}".'/bzs/?name='.$name.'&id='.$_GET['id'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
